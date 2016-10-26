@@ -1,0 +1,56 @@
+﻿<!-- Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license in root of repo. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Alert</title>
+
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.1.js" type="text/javascript"></script>
+
+    <!-- For the Office UI Fabric, go to http://aka.ms/office-ui-fabric to learn more. -->
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.min.css">
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.components.min.css">
+
+    <script src="page.js" type="text/javascript"></script>
+
+</head>
+<body>
+    <main>
+        <div ms-Grid">
+            <div class="ms-Grid-row">
+                <div class="ms-Grid-col">
+                    <button id="bing" class="ms-Button ms-Button--primary">
+                        <span class="ms-Button-icon"></span>
+                        <span class="ms-Button-label">Bing</span>
+                        <span class="ms-Button-description">Click OK to cancel</span>
+                    </button>
+                </div>
+                <div class="ms-Grid-col">
+                    <button id="ok-button" class="ms-Button ms-Button--primary">
+                        <span class="ms-Button-icon"></span>
+                        <span class="ms-Button-label">Close</span>
+                        <span class="ms-Button-description">Click OK to cancel</span>
+                    </button>
+                </div>
+                <div class="ms-Grid-col">
+                    <button id="open-bing" class="ms-Button ms-Button--primary">
+                        <span class="ms-Button-icon"></span>
+                        <span class="ms-Button-label">Open a new window</span>
+                        <span class="ms-Button-description">Click to open a new window to Bing</span>
+                    </button>
+                </div>
+            </div>
+            <div class="ms-Grid-row">
+
+                <a class="ms-Link ms-Link--hero" href="https://www.bing.com">Bing link without target property</a><br />
+                <a target="_blank" class="ms-Link ms-Link--hero" href="https://www.bing.com">Bing link with https and target property</a><br />
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
